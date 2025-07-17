@@ -2,7 +2,7 @@ import React, { useState, useSyncExternalStore } from "react";
 import io from "socket.io-client";
 import {Chat} from "./Chat";
 
-const socket = io.connect("http://localhost:3001");
+const socket = io.connect("https://chat-webapp-production-585a.up.railway.app/");
 
 const App = () => {
   const [username, setUsername] = useState("");
